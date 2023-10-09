@@ -12,17 +12,14 @@ let età = parseInt(prompt('Quanti anni hai?'));
 console.log(età)
 
 let prezzo = (0.21 * km)
-console.log(prezzo)
 
 if (isNaN(età) | isNaN(km)){
     window.location.reload();
 }
 if (età < 18) {
     prezzo = (prezzo - (prezzo* 0.20));
-    // prezzo.toPrecision(4);
-    console.log('prezzo €', prezzo);
+    console.log('prezzo €', prezzo.toPrecision(3));
 } else if (età > 65){
     prezzo = (prezzo - (prezzo* 0.40));
-    // prezzo.toPrecision(4);
-    console.log('prezzo €', prezzo);
+    console.log('prezzo €', prezzo.toPrecision(3));
 }
