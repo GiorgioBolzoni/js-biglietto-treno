@@ -19,7 +19,11 @@ if (isNaN(età) | isNaN(km)){
 if (età < 18) {
     prezzo = (prezzo - (prezzo* 0.20));
     console.log('prezzo €', prezzo.toPrecision(3));
+
 } else if (età > 65){
     prezzo = (prezzo - (prezzo* 0.40));
+    console.log('prezzo €', prezzo.toPrecision(3));
+} else{
+    prezzo = prezzo;
     console.log('prezzo €', prezzo.toPrecision(3));
 }
